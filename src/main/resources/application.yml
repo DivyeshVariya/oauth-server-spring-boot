@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: oauth-server
+  data:
+    mongodb:
+      uri: mongodb
+      database: oauth-server
+      auto-index-creation: true
+jwt:
+  rsa-private-key: classpath:certs/privateKey.pem
+  rsa-public-key: classpath:certs/publicKey.pem
+
+server:
+  port: 8081
